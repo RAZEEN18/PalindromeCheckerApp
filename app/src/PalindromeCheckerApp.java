@@ -7,15 +7,17 @@ public class PalindromeCheckerApp{
                 System.out.print("Enter text: ");
                 String input = sc.nextLine();
                 String reversed = "";
-        for (int i = input.length() - 1; i >= 0; i--) {
-            reversed = reversed + input.charAt(i);
-        }
-        boolean isPalindrome = input.equalsIgnoreCase(reversed);
-        System.out.println("Is it a Palindrome? : " + isPalindrome);
-        sc.close();
+                for (int i = input.length() - 1; i >= 0; i--) {
+                    reversed = reversed + input.charAt(i);
+                }
+                boolean isPalindrome = input.equals(reversed);
+                System.out.println("Reversed text: " + reversed);
+                System.out.println("Is it a Palindrome? : " + isPalindrome);
+                sc.close();
             }
         }
 
-    }
-}
+
+
+
 
